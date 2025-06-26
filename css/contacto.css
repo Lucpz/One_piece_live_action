@@ -1,0 +1,289 @@
+.comentarios-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.comentarios-list {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.comentario {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s;
+}
+
+.comentario:hover {
+    transform: translateX(5px);
+}
+
+.comentario:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.comentario-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.comentario-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d42323;
+    color: white;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.comentario-info h4 {
+    margin: 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.comentario-info span {
+    color: #777;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.comentario-texto {
+    color: #555;
+    line-height: 1.6;
+    padding-left: 62px; 
+}
+.redes-sociales, 
+.newsletter, 
+.ubicacion, 
+.comentarios-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+.comentarios-section {
+    background-color: #f8f8f8;
+    padding: 3rem 1rem;
+}
+.section-title {
+    color: #d42323;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+.redes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.redes-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 2rem;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.redes-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.redes-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.redes-icon {
+    font-size: 2.5rem;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: transform 0.3s;
+}
+
+.redes-card:hover .redes-icon {
+    transform: scale(1.1);
+}
+
+.redes-icon.netflix {
+    background-color: #e50914;
+}
+
+.redes-icon.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.redes-icon.x {
+    background-color: #000;
+}
+
+.netflix-logo {
+    width: 40px;
+    height: auto;
+}
+
+.newsletter {
+    background-color: #f8f8f8;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    padding: 0.8rem 1rem;
+    border: 2px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    width: 70%;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: #d42323;
+}
+
+.newsletter-form button {
+    padding: 0.8rem 1.5rem;
+    background-color: #d42323;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.newsletter-form button:hover {
+    background-color: #b31c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ubicacion {
+    background-color: white;
+    padding: 3rem 1rem;
+}
+
+.mapa-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.mapa-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.mapa-info h3 {
+    color: #d42323;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5
+}
+.comentario-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.comentario-form h3 {
+    color: #d42323;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 2rem); 
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #d42323;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+.submit-btn {
+    background-color: #d42323;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.submit-btn:hover {
+    background-color: #b31c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

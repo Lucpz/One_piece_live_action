@@ -1,0 +1,254 @@
+.seasons-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.season-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.season-card:hover {
+    transform: translateY(-5px);
+}
+
+.season-header {
+    background-color: #d42323;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.season-header h2 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.season-badge {
+    background-color: white;
+    color: #d42323;
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.season-badge.upcoming {
+    background-color: #333;
+    color: white;
+}
+
+.season-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+
+.season-poster {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+.season-poster img {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+
+.season-info {
+    flex: 2;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+.season-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.season-details p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.season-details i {
+    color: #d42323;
+}
+
+.season-arcs h3 {
+    color: #d42323;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.arcs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.arcs-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.arcs-list i {
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    color: #d42323;
+}
+
+.season-highlight {
+    background-color: #fff8e1;
+    padding: 1rem;
+    border-left: 4px solid #d42323;
+    border-radius: 0 4px 4px 0;
+}
+
+.season-highlight i {
+    color: #d42323;
+    margin-right: 0.5rem;
+}
+
+.season-actions {
+    padding: 1rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.watch-button {
+    display: inline-block;
+    background-color: #d42323;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.watch-button:hover {
+    background-color: #b31c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.notify-button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.notify-button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-section {
+    background-color: #f8f8f8;
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline-section h2 {
+    text-align: center;
+    color: #d42323;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #d42323;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-date {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d42323;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.timeline-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid white;
+}
+
+.timeline-content h3 {
+    color: #d42323;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
