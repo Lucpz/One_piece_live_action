@@ -28,6 +28,7 @@
                 </li>
                 <li><a href="./contacto.html" class="active"><img src="../img/icono/correo.svg" alt="Inicio" class="icons">Contacto</a>
                 </li>
+                <li><a href="./musica.html"><img src="../img/icono/musica.png" alt="Música" class="icons">Música</a></li>
             </ul>
         </nav>
     </header>
@@ -78,9 +79,9 @@
         <section class="newsletter">
             <h2 class="section-title">¡Recibe Noticias del Mundo One Piece!</h2>
             <p>Suscríbete a nuestro newsletter para recibir actualizaciones exclusivas</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Tu correo electrónico" required>
-                <button type="submit">Unirse <i class="fas fa-arrow-right"></i></button>
+            <form class="newsletter-form" action="./error.html" method="POST">
+                <input type="email" placeholder="Ingrese su Correo para ir a la pagina de error" required>
+                <button type="submit">Unirse</button>
             </form>
         </section>
 
@@ -89,10 +90,14 @@
             <div class="comentarios-container">
                 <div class="comentario-form">
                     <h3>Deja tu comentario sobre la serie</h3>
-                    <form>
+                    <form action="./mensajeenviado.html" method="POST">
                         <div class="form-group">
                             <label for="nombre">Nombre</label>
                             <input type="text" id="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Apellido</label>
+                            <input type="text" id="apellido" placeholder="Tu apellido" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Correo electrónico (no se publicará)</label>
@@ -179,6 +184,7 @@
     <footer>
         <p class="copyright">&copy; 2023 One Piece Live Action Fan Page. Basado en el manga de Eiichiro Oda.</p>
     </footer>
+    
 </body>
 
 </html>
