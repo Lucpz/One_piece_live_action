@@ -134,3 +134,45 @@
     border-left: 4px solid #d42323;
     color: #555;
 }
+@media (max-width: 1024px) {
+  .cast-container {
+    padding: 2rem 1rem;
+  }
+  
+  .cast-card {
+    flex-direction: column;
+  }
+  
+  .cast-images, .cast-info {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cast-intro h2 {
+    font-size: 1.8rem;
+  }
+  
+  .cast-intro p {
+    font-size: 1rem;
+  }
+  
+  .actor-details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cast-intro h2 {
+    font-size: 1.5rem;
+  }
+  
+  .cast-info h3 {
+    font-size: 1.4rem;
+  }
+  
+  .character-name {
+    font-size: 1.1rem;
+  }
+}

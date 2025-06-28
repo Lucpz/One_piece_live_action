@@ -287,3 +287,62 @@
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 1024px) {
+  .redes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .redes-card {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .mapa-container {
+    flex-direction: column;
+  }
+  
+  .mapa-info {
+    min-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter-form {
+    flex-direction: column;
+  }
+  
+  .newsletter-form input {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .newsletter-form button {
+    border-radius: 4px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .comentario-texto {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .comentario-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+}

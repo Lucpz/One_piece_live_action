@@ -169,3 +169,50 @@
     margin-bottom: 1rem;
     color: #333;
 }
+
+@media (max-width: 1024px) {
+  .section-container {
+    flex-direction: column;
+  }
+  
+  .content-text, .content-image {
+    min-width: 100%;
+  }
+  
+  .section-container.reverse {
+    flex-direction: column;
+  }
+  
+  .facts-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .fact-card {
+    min-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .synopsis-section, .production-section {
+    padding: 2rem 0;
+  }
+  
+  .production-card {
+    padding: 1rem;
+  }
+  
+  .crew-list li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-text h2 {
+    font-size: 1.5rem;
+  }
+  
+  .ship-name {
+    font-size: 1rem;
+  }
+}

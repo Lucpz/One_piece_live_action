@@ -252,3 +252,55 @@
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
+
+@media (max-width: 1024px) {
+  .season-content {
+    flex-direction: column;
+  }
+  
+  .season-poster, .season-info {
+    min-width: 100%;
+  }
+  
+  .timeline-container {
+    padding-left: 30px;
+  }
+  
+  .timeline-date {
+    left: -30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .season-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .season-badge {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.8rem;
+  }
+  
+  .arcs-list li {
+    margin-bottom: 0.3rem;
+  }
+  
+  .watch-button, .notify-button {
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .season-header {
+    padding: 0.8rem 1rem;
+  }
+  
+  .season-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .season-details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
